@@ -9,10 +9,11 @@ body {
   justify-content: center;
   font-family: Helvetica, sans-serif;
   color: rgb(92, 92, 92);
+  min-height: 100%
 }
 
 .temperature-big {
-  font-size: 85px;
+  font-size: 65px;
   padding-left: 20px;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 .temperature-small {
-  font-size: 40px;
+  font-size: 30px;
   li
 }
 
@@ -36,10 +37,10 @@ body {
 
 .box {
   text-align: center;
-  width: 200px;
+  width: 150px;
   background-color: rgb(172, 255, 255);
   padding: 20px 0 20px 0;
   margin: 20px 0px 0px 20px;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
 }
