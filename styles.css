@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: linear-gradient(white, #92d1d0);
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  color: rgb(92, 92, 92);
+}
+
+.temperature-big {
+  font-size: 85px;
+  padding-left: 20px;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.temperature-small {
+  font-size: 40px;
+  li
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  text-align: center;
+  width: 200px;
+  background-color: rgb(172, 255, 255);
+  padding: 20px 0 20px 0;
+  margin: 20px 0px 0px 20px;
+  font-weight: 300;
+  font-size: 30px;
+}
