@@ -7,62 +7,68 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="styles.css"> 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
  </head>
   <body>
     <div class="parent-container">
         <div class="heading-container">
             <div class="temperature-big">
-                <div id="value11">23°C</div>
+                <div id="temp-value">23°C</div>
             </div>
             <div class="temperature-small">
-                <div id="value21">11°C</div>
-                <div id="value31">13°C</div>
+                <div id="max-temp">31.5°C</div>
+                <div id="min-temp">19.2°C</div>
             </div>
         </div>
 
         <div class="box-container">
             <div class="row1">
                 <div class="box">
-                    <i class='fas fa-temperature-low' style='font-size:48px;'></i>
+                    <i class='fas fa-water' style='font-size:48px;'></i>
+                    <br> Humidity
+                    <div id="humidity-value">72%</div>
+                </div>
+                <div class="box"><i class='fas fa-rainbow' style='font-size:48px;'></i>
                     <br> Air Pressure
-                    <div id="value1">1bar</div>
+                    <div id="air-pressure-value">980 mb</div>
                 </div>
-                <div class="box">
-                    <i class='fas fa-cloud-sun-rain' style='font-size:48px;'></i>
-                    <br> PM1
-                    <div id="value2">220 mm</div>
                 </div>
+                
             </div>
            
             <div class="row1">
+                
                 <div class="box">
-                    <i class='	fas fa-cloud-showers-heavy' style='font-size:48px;'></i>
-                    <br> PM2
-                    <div id="value3">720 mm</div>
+                    <i class='fas fa-meteor	' style='font-size:48px;'></i>
+                    <br> AQI
+                    <div id="aqi-value">66</div>
                 </div>
-                <div class="box"><i class='fas fa-poo-storm' style='font-size:48px;'></i>
-                    <br> PM3
-                    <div id="value4">220 mm</div>
+                <div class="box">
+                    <i class='fas fa-wind' style='font-size:48px;'></i>
+                    <br> PM2.5
+                    <div id="pm25-value">72 ppm</div>
                 </div>
+                
             </div>
 
             <div class="row1">
                 <div class="box">
                     <i class='fas fa-smog' style='font-size:48px;'></i>
                     <br>
-                    Air Pressure
-                    <div id="value5">720 mm</div>
+                    CO₂
+                    <div id="co2-value">240ppm</div>
                 </div>
                 <div class="box">
-                    <i class='fas fa-cloud-sun' style='font-size:48px;'></i>
-                    <br> PM1
-                    <div id="value6">220 mm</div>
+                    <i class='fas fa-wind	' style='font-size:48px;'></i>
+                    <br> PM10
+                    <div id="pm10-value">22 ppm</div>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

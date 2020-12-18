@@ -9,24 +9,28 @@ body {
   justify-content: center;
   font-family: Helvetica, sans-serif;
   color: rgb(92, 92, 92);
-  min-height: 100%
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .temperature-big {
-  font-size: 65px;
-  padding-left: 20px;
+  font-size: 50px;
+  padding-left: 0px;
+  font-weight: 550;
 }
 
 .heading-container {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .temperature-small {
-  font-size: 30px;
-  li
+  font-size: 27px;
+  font-weight: 550;
 }
 
 .row1 {
@@ -39,8 +43,49 @@ body {
   text-align: center;
   width: 150px;
   background-color: rgb(172, 255, 255);
-  padding: 20px 0 20px 0;
-  margin: 20px 0px 0px 20px;
-  font-weight: 300;
+  padding: 20px 0px 10px 0px;
+  margin: 20px 10px 10px 10px;
+  font-weight: 550;
   font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+i {
+  padding-bottom: 10px;
+  color: rgb(0, 163, 155);
+}
+
+#temp-value,
+#humidity-value,
+#air-pressure-value,
+#pm25-value,
+#pm10-value,
+#co2-value,
+#aqi-value {
+  color: rgb(0, 12, 187);
+}
+
+#humidity-value,
+#air-pressure-value,
+#pm25-value,
+#pm10-value,
+#co2-value,
+#aqi-value {
+  line-height: 40px;
+  font-size: 27px;
+}
+
+#max-temp {
+  color: rgb(255, 43, 43);
+}
+
+#min-temp {
+  color: green;
+}
+
+@media (min-height: 1000px) {
+  body {
+    zoom: 1.9;
+  }
 }
